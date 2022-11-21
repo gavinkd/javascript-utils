@@ -1,13 +1,13 @@
-# @gavinkd/javascript-utils
+# @gogoing/javascript-utils
 
 JS 常用工具函数库
 
 ### Usage
 
 ```bash
-yarn add @gavinkd/javascript-utils
+yarn add @gogoing/javascript-utils
 or
-npm install @gavinkd/javascript-utils --save
+npm install @gogoing/javascript-utils --save
 ```
 
 ## Credits
