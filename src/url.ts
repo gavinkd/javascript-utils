@@ -1,3 +1,7 @@
+function urlReplace(url: string): string {
+  return url.indexOf("?") > -1 ? url.split("?")[1] : url
+}
+
 /**
  * 获取 URL 查询参数
  * @param { string } url Url 链接
@@ -8,6 +12,7 @@ export function urlSearchParam(
   url: string = location?.search,
   key: string
 ): string | null {
+  url = urlReplace(url)
   const urlSearchParams = new URLSearchParams(url)
   return urlSearchParams.get(key)
 }
@@ -17,7 +22,7 @@ export function urlSearchParam(
  * @param url Url 链接
  */
 export function parseUrlParams(url: string = location?.search): { [key: string]: any } {
-  url = url.indexOf("?") > -1 ? url.split("?")[1] : url
+  url = urlReplace(url)
   const urlSearchParams = new URLSearchParams(url);
   const result = {} as { [key: string]: any };
 
