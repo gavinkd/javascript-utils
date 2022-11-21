@@ -5,9 +5,9 @@
     "name": "Frank",
     "email": "1056616012@qq.com"
   },
-  "main": "dist/javascript-utils.cjs.min.js",
-  "module": "dist/javascript-utils.esm.min.js",
-  "browser": "dist/javascript-utils.umd.min.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
